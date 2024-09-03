@@ -18,17 +18,27 @@
   <body>
     <header><h1>회원가입</h1></header>
     <main>
-      <div class="info">
-        <label for="member__id">ID :</label>
-        <input type="text" id="member__id" placeholder="아이디를 입력하세요." />
-      </div>
-      <div class="info">
-        <label for="member__fw">PW :</label>
-        <input type="text" id="member__fw" placeholder="패스워드를 입력하세요." />
-      </div>
-      <span>* 패스워드는 영대소문자, 숫자, 특수문자를 합하여 총 14글자 이하여야 합니다.</span>
       <div class="join">
-        <button>가입하기</button>
+        <!-- ID 입력 -->
+        <div class="member">
+          <label for="member__id">ID :</label>
+          <input type="text" id="member__id" placeholder="아이디를 입력하세요." />
+        </div>
+
+        <p id="id__info"></p>
+
+        <!-- PW 입력 -->
+        <div class="member">
+          <label for="member__fw">PW :</label>
+          <input type="text" id="member__Pw" placeholder="패스워드를 입력하세요." />
+        </div>
+
+        <p id="pw__info">* 영문 대소문자, 숫자, 특수문자(!@#$%*) 포함 총 14글자 이하</p>
+
+        <!-- 가입하기 -->
+        <div class="submit">
+          <button id="submit__join">가입하기</button>
+        </div>
       </div>
     </main>
   </body>
