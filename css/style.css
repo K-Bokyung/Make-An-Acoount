@@ -1,6 +1,6 @@
 /* 공통 */
 :root {
-  background-color: rgb(241, 226, 255);
+  background-color: rgb(251, 246, 255);
 }
 
 * {
@@ -10,7 +10,9 @@
 body {
   width: 20rem;
   height: 20rem;
-  border: 0.1rem solid black;
+  border: 0.2rem solid rgb(168, 120, 207);
+  border-radius: 10%;
+  margin: 1rem;
 }
 
 header {
@@ -26,9 +28,10 @@ input {
 }
 
 p {
-  text-align: center;
-  font-size: 12px;
+  text-align: left;
+  font-size: 11px;
   margin-top: 0;
+  margin-left: 1.5rem;
   padding: 0 2rem;
 }
 
@@ -36,10 +39,17 @@ p {
   display: grid;
   grid-template-columns: 12% 88%;
   margin: 0 1rem;
+  margin-top: 2rem;
 }
 
 .submit {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+#submit__join {
+  padding: 0.4rem;
+  background-color: rgb(196, 151, 233);
+  border-radius: 10%;
 }
