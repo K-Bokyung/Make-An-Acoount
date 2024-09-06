@@ -9,14 +9,12 @@ function submitMember() {
   let result = newPw.match(pattern);
 
   // 비밀번호 정상성 체크
-  console.log('비밀번호 중복 체크');
   if (newPw.length > 14) {
-    alert('비밀번호가 14자를 초과했습니다.');
+    alert('비밀번호는 8~14자여야 합니다.');
   } else if (result.length !== newPw.length) {
     alert('영문 대소문자, 숫자, 특수문자(!@#%&)로만 비밀번호를 만들어주세요.');
   } else {
     // 아이디 중복 체크
-    console.log('아이디 중복 체크');
     if (idList.includes(newId)) {
       alert('중복된 아이디 입니다.');
     } else {
